@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #eba834;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+header div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div img {
+    position: relative;
+    top: 20px;
+}
+
+footer {
+    height: 65px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #eba834;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+footer div {
+    width: 100%;
+}
+footer div > button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #eba834;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 1px solid rgba(255, 255, 255, 0.37);
+}
