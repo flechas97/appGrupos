@@ -14,19 +14,24 @@ export default function Welcome() {
     return (
         <>
             <AppWrapper>
-                <ul>
-                    {/* Recorremos los planes y mostramos cada uno */}
-                    {plans.map(
-                        (
-                            plan: Plan, // Usamos 'Plan' para el tipo de 'plan'
-                        ) => (
-                            <li key={plan.id}>
-                                <h2>{plan.nombre}</h2>
-                                <p>{plan.descripcion}</p>
-                            </li>
-                        ),
-                    )}
-                </ul>
+                <h2>Crea tu plan</h2>
+                <hr />
+                <div className='formularioStandard'>
+                    <input type="text" name="" id=""  placeholder='Titulo'/>
+                    <input type="text" name="" id=""  placeholder='Descripción'/>
+                    <input type="text" name="" id=""  placeholder='Ubicación'/>
+                    <input type="datetime-local" id="datetime" name="datetime" />
+                    <input type="text" name="" id=""  placeholder='Precio'/>
+                    <select name="" id="">
+                        <option value="" disabled selected>Categoria</option>
+                        <option value="">Categoria</option>
+                        <option value="">Categoria</option>
+                        <option value="">Categoria</option>
+                    </select>
+                    <button>Proponer</button>
+                </div>
+              
+             
             </AppWrapper>
 
             {/* <Head title="Welcome">
